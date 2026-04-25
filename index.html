@@ -147,7 +147,31 @@
                WhatsApp Par Feedback Dein
             </a>
         </div>
-    </div>
+    </div> 
+        <div style="text-align: center; margin-top: 30px; padding: 15px; background-color: #f1f3f5; border-radius: 8px; border: 1px solid #e9ecef;">
+            <h4 style="margin: 0; color: #1a1a2e; font-size: 16px;">👁️ Total Website Visits</h4>
+            <p style="margin: 5px 0 0 0; font-size: 24px; font-weight: bold; color: #e94560;" id="visit-count">...</p>
+        </div>
+
+        <script>
+            // Yeh code background mein ginti badhata hai aur laakar dikhata hai
+            fetch('https://api.counterapi.dev/v1/sunil_appstore/visits/up')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('visit-count').innerText = data.count;
+                })
+                .catch(error => {
+                    document.getElementById('visit-count').innerText = "Loading error";
+                });
+        </script>
+        ```
+
+### Yeh Kaise Kaam Karega?
+1. Jise hi koi page khulega, HTML usko ek sundar sa box dikhayega jisme likha hoga **"👁️ Total Website Visits"**.
+2. Phir humara likha hua `<script>` (JavaScript) chupchap free database (counterapi.dev) ke paas jayega, ginti ko `+1` karega, aur wapas aakar naya number `...` ki jagah print kar dega.
+3. Isse page ekdum professional lagega aur sabko pata chalega ki kitne logo ne visit kiya hai!
+
+Isko apne code mein daal kar 'Commit changes' karein. 2-3 minute baad page refresh karke dekhein, aapko wahan **1** likha dikhega (kyunki pehli baar aapne khola hoga)!
 
 </body>
 </html>
