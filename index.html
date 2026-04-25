@@ -78,7 +78,7 @@
             background-color: #e94560;
         }
         .download-btn-ludo {
-            background-color: #e94560; /* Ludo ke liye alag color */
+            background-color: #e94560;
         }
         .download-btn-ludo:hover {
             background-color: #0f3460;
@@ -98,6 +98,15 @@
             font-size: 16px;
             font-weight: bold;
             display: inline-block;
+        }
+        /* Counter Box Style */
+        .counter-box {
+            text-align: center; 
+            margin-top: 30px; 
+            padding: 15px; 
+            background-color: #f1f3f5; 
+            border-radius: 8px; 
+            border: 1px solid #e9ecef;
         }
         @media (max-width: 480px) {
             .app-item {
@@ -143,35 +152,17 @@
             <p style="color: #666; font-size: 14px; margin-bottom: 20px;">
                 Agar aapko app pasand aayi ya koi sujhaav dena chahte hain, toh mujhe seedha WhatsApp par message karein:
             </p>
-            <a href="https://wa.me/918318031785?text=Hello,%20mujhe%20aapki%20app%20se%20related%20feedback%20dena%20hai" class="submit-btn">
+            <a href="[https://wa.me/918318031785?text=Hello,%20mujhe%20aapki%20app%20se%20related%20feedback%20dena%20hai](https://wa.me/918318031785?text=Hello,%20mujhe%20aapki%20app%20se%20related%20feedback%20dena%20hai)" class="submit-btn">
                WhatsApp Par Feedback Dein
             </a>
         </div>
-    </div> 
-        <div style="text-align: center; margin-top: 30px; padding: 15px; background-color: #f1f3f5; border-radius: 8px; border: 1px solid #e9ecef;">
-            <h4 style="margin: 0; color: #1a1a2e; font-size: 16px;">👁️ Total Website Visits</h4>
-            <p style="margin: 5px 0 0 0; font-size: 24px; font-weight: bold; color: #e94560;" id="visit-count">...</p>
+
+        <div class="counter-box">
+            <h4 style="margin: 0 0 10px 0; color: #1a1a2e; font-size: 16px;">👁️ Total Website Visits</h4>
+            <img src="[https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fsunilkushwaha12527-art.github.io%2FSunilmp3player_app_store&countColor=%23e94560&style=flat](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fsunilkushwaha12527-art.github.io%2FSunilmp3player_app_store&countColor=%23e94560&style=flat)" alt="Visitor Counter" style="width: auto; height: 30px;">
         </div>
 
-        <script>
-            // Yeh code background mein ginti badhata hai aur laakar dikhata hai
-            fetch('https://api.counterapi.dev/v1/sunil_appstore/visits/up')
-                .then(response => response.json())
-                .then(data => {
-                    document.getElementById('visit-count').innerText = data.count;
-                })
-                .catch(error => {
-                    document.getElementById('visit-count').innerText = "Loading error";
-                });
-        </script>
-        ```
-
-### Yeh Kaise Kaam Karega?
-1. Jise hi koi page khulega, HTML usko ek sundar sa box dikhayega jisme likha hoga **"👁️ Total Website Visits"**.
-2. Phir humara likha hua `<script>` (JavaScript) chupchap free database (counterapi.dev) ke paas jayega, ginti ko `+1` karega, aur wapas aakar naya number `...` ki jagah print kar dega.
-3. Isse page ekdum professional lagega aur sabko pata chalega ki kitne logo ne visit kiya hai!
-
-Isko apne code mein daal kar 'Commit changes' karein. 2-3 minute baad page refresh karke dekhein, aapko wahan **1** likha dikhega (kyunki pehli baar aapne khola hoga)!
+    </div>
 
 </body>
 </html>
