@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>addfree apk</title>
+    <title>Addfree APK Store</title>
     <style>
-        /* Website ka Design (CSS) */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -13,8 +12,6 @@
             background-color: #f8f9fa;
             color: #333;
         }
-
-        /* Top Header Style */
         header {
             background-color: #1a1a2e;
             color: #ffffff;
@@ -22,14 +19,11 @@
             text-align: center;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-
         header h1 {
             margin: 0;
             font-size: 28px;
             letter-spacing: 1px;
         }
-
-        /* Main Content Box */
         .container {
             max-width: 600px;
             margin: 40px auto;
@@ -38,21 +32,17 @@
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
-
         .container h2 {
             color: #1a1a2e;
             margin-top: 0;
             text-align: center;
         }
-
         .intro-text {
             color: #666;
             line-height: 1.6;
             text-align: center;
             margin-bottom: 30px;
         }
-
-        /* App List Style */
         .app-item {
             display: flex;
             justify-content: space-between;
@@ -63,20 +53,16 @@
             border: 1px solid #e9ecef;
             margin-bottom: 20px;
         }
-
         .app-details h3 {
             margin: 0 0 5px 0;
             color: #1a1a2e;
             font-size: 18px;
         }
-
         .app-details p {
             margin: 0;
             font-size: 14px;
             color: #777;
         }
-
-        /* Download Button Style */
         .download-btn {
             background-color: #0f3460;
             color: #ffffff;
@@ -88,60 +74,31 @@
             transition: background-color 0.3s ease;
             white-space: nowrap;
         }
-
         .download-btn:hover {
             background-color: #e94560;
         }
-
-        /* Feedback Section Style */
+        .download-btn-ludo {
+            background-color: #e94560; /* Ludo ke liye alag color */
+        }
+        .download-btn-ludo:hover {
+            background-color: #0f3460;
+        }
         .feedback-box {
             margin-top: 40px;
             padding-top: 25px;
             border-top: 2px solid #f1f3f5;
+            text-align: center;
         }
-
-        .feedback-box h3 {
-            color: #1a1a2e;
-            margin-top: 0;
-        }
-
-        .form-group {
-            margin-bottom: 15px;
-        }
-
-        .form-group input, 
-        .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ced4da;
-            border-radius: 5px;
-            font-family: inherit;
-            box-sizing: border-box; /* Ensures padding doesn't break width */
-        }
-
-        .form-group input:focus, 
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #0f3460;
-        }
-
         .submit-btn {
-            background-color: #1a1a2e;
+            background-color: #25D366;
             color: #ffffff;
-            border: none;
             padding: 12px 25px;
+            text-decoration: none;
             border-radius: 5px;
             font-size: 16px;
-            cursor: pointer;
-            width: 100%;
-            transition: 0.3s;
+            font-weight: bold;
+            display: inline-block;
         }
-
-        .submit-btn:hover {
-            background-color: #0f3460;
-        }
-
-        /* Mobile Responsive */
         @media (max-width: 480px) {
             .app-item {
                 flex-direction: column;
@@ -158,11 +115,10 @@
 <body>
 
     <header>
-        <h1>Addfree apk</h1>
+        <h1>Addfree APK</h1>
     </header>
 
     <div class="container">
-        
         <h2>Welcome to Our Platform</h2>
         <p class="intro-text">Yahan aapko sabhi premium applications bina kisi ads ke milenge. Ekdum clean aur fast experience ke liye niche click karein.</p>
         
@@ -171,63 +127,27 @@
                 <h3>sunil MP3player</h3>
                 <p>Version: 1.0 | Size: 15 MB</p>
             </div>
-            <a href="sunil mp3player.apk" class="download-btn" download>Download APK</a>
-        </div>
-                <div class="app-item">
-            <div class="app-details">
-                <h3>Naya App Ka Naam</h3>
-                <p>Version: 1.0 | Size: 25 MB</p>
-            </div>
-            <a href="naya-app.apk" class="download-btn" download>Download APK</a>
-        </div>
-        ```
-
-### Kaise aur kahan add karein (Pura section kaisa dikhega):
-
-Jab aap ise apne code mein daalenge, toh aapka `.container` wala hissa kuch aisa dikhega:
-
-```html
-    <div class="container">
-        
-        <h2>Welcome to Our Platform</h2>
-        <p class="intro-text">Yahan aapko sabhi premium applications bina kisi ads ke milenge. Ekdum clean aur fast experience ke liye niche click karein.</p>
-        
-        <div class="app-item">
-            <div class="app-details">
-                <h3>sunil MP3player</h3>
-                <p>Version: 1.0 | Size: 15 MB</p>
-            </div>
-            <a href="sunil mp3player.apk" class="download-btn" download>Download APK</a>
+            <a href="sunil_mp3player.apk" class="download-btn" download>Download APK</a>
         </div>
 
         <div class="app-item">
             <div class="app-details">
-                <h3>sunil_ludo.apk</h3>
+                <h3>sunil Ludo</h3>
                 <p>Version: 1.0 | Size: 11 MB</p>
             </div>
-            <a href="nayi-app-ki-file.apk" class="download-btn" download>Download APK</a>
+            <a href="sunil_ludo.apk" class="download-btn download-btn-ludo" download>Download APK</a>
         </div>
 
         <div class="feedback-box">
-            <h3>Feedback / Comment</h3>
-            ```
-
-Bas apni `.apk` file ka sahi naam `href="..."` mein daalna mat bhooliyega, taaki download button sahi se kaam kare!
-
-
-                <div class="feedback-box">
-            <h3>Feedback / Comment</h3>
+            <h3 style="color: #1a1a2e; margin-top: 0;">Feedback / Comment</h3>
             <p style="color: #666; font-size: 14px; margin-bottom: 20px;">
                 Agar aapko app pasand aayi ya koi sujhaav dena chahte hain, toh mujhe seedha WhatsApp par message karein:
             </p>
-            
-            <a href="https://wa.me/918318031785?text=Hello,%20mujhe%20aapki%20app%20se%20related%20feedback%20dena%20hai" 
-               class="submit-btn" 
-               style="display: inline-block; text-decoration: none; text-align: center; background-color: #25D366; color: white; padding: 12px 25px; border-radius: 5px; font-weight: bold;">
+            <a href="https://wa.me/918318031785?text=Hello,%20mujhe%20aapki%20app%20se%20related%20feedback%20dena%20hai" class="submit-btn">
                WhatsApp Par Feedback Dein
             </a>
         </div>
+    </div>
 
 </body>
 </html>
-
