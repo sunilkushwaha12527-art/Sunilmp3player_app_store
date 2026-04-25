@@ -43,6 +43,33 @@
             text-align: center;
             margin-bottom: 30px;
         }
+
+        /* Naya Release Button Style */
+        .release-banner {
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 30px;
+            border: 1px solid #e94560;
+        }
+        .update-btn {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #e94560;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        .update-btn:hover {
+            transform: scale(1.05);
+            background-color: #ff5e78;
+        }
+
         .app-item {
             display: flex;
             justify-content: space-between;
@@ -128,8 +155,16 @@
 
     <div class="container">
         <h2>Welcome to Our Platform</h2>
-        <p class="intro-text">Yahan aapko sabhi premium applications bina kisi ads ke milenge. Ekdum clean aur fast experience ke liye niche click karein.</p>
+        <p class="intro-text">Yahan aapko sabhi premium applications bina kisi ads ke milenge.</p>
         
+        <div class="release-banner">
+            <h3 style="margin: 0; font-size: 18px;">🚀 Latest Version Update</h3>
+            <p style="margin: 5px 0; font-size: 14px; opacity: 0.9;">Naye features aur updates ke liye release page dekhein.</p>
+            <a href="https://github.com/sunilkushwaha12527-art/Sunilmp3player_app_store/releases" class="update-btn" target="_blank">
+                Check All Releases
+            </a>
+        </div>
+
         <div class="app-item">
             <div class="app-details">
                 <h3>sunil MP3player</h3>
